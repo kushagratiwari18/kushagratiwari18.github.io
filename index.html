@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Website</title>
+  <title>Your Name | Personal Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, I am Kushagra</h1>
-  <p>Welcome to my personal website.</p>
-  <p>This website is built using GitHub Pages.</p>
+
+  <header>
+    <h1>Your Name</h1>
+    <p class="tagline">Researcher | Engineer | Academic</p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="showTab('about')">About</button>
+      <button class="tab-button" onclick="showTab('experience')">Experience</button>
+      <button class="tab-button" onclick="showTab('research')">Research</button>
+      <button class="tab-button" onclick="showTab('contact')">Contact</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- About -->
+    <div id="about" class="tab-content active">
+      <h2>About</h2>
+      <p>
+        I am a mechanical engineer working in computational mechanics,
+        fatigue, and AI-driven engineering workflows.
+      </p>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="tab-content">
+      <h2>Experience</h2>
+
+      <div class="card">
+        <h3>Senior Engineer / R&D</h3>
+        <p class="meta">Company Name | Year – Present</p>
+        <p>Working on simulation workflows and AI-driven tools.</p>
+      </div>
+
+      <div class="card">
+        <h3>Assistant Professor</h3>
+        <p class="meta">Institute Name | Year – Year</p>
+        <p>Teaching and research in mechanical engineering.</p>
+      </div>
+    </div>
+
+    <!-- Research -->
+    <div id="research" class="tab-content">
+      <h2>Research</h2>
+      <ul>
+        <li>Multiscale modeling</li>
+        <li>Fatigue and fracture</li>
+        <li>Additive manufacturing</li>
+        <li>AI in engineering</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn: your link</p>
+      <p>Google Scholar: your link</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
+
+  <!-- JavaScript for tabs -->
+  <script>
+    function showTab(tabId) {
+      // hide all content
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(c => c.classList.remove('active'));
+
+      // remove active from buttons
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(b => b.classList.remove('active'));
+
+      // show selected tab
+      document.getElementById(tabId).classList.add('active');
+
+      // highlight active button
+      event.target.classList.add('active');
+    }
+  </script>
+
 </body>
 </html>
