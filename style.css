@@ -84,3 +84,22 @@ footer {
   padding: 20px;
   color: #777;
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2563eb;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
