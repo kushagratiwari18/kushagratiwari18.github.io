@@ -118,39 +118,3 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
 }
-
-.degree {
-  font-weight: bold;
-  flex: 2;
-}
-
-.university {
-  flex: 2;
-  color: #374151;
-}
-
-.cpi {
-  flex: 1;
-  color: #6b7280;
-}
-
-.year {
-  flex: 1;
-  text-align: right;
-  color: #6b7280;
-}
-
-.edu-university {
-  font-weight: 500;
-  color: #374151;
-  margin-bottom: 8px;
-}
-
-.edu-details {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: 14px;
-  color: #6b7280;
-  margin-bottom: 10px;
-}
