@@ -103,3 +103,39 @@ footer {
   flex: 1;
   min-width: 250px;
 }
+
+.edu-card {
+  background: #f9fafb;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.degree {
+  font-weight: bold;
+  flex: 2;
+}
+
+.university {
+  flex: 2;
+  color: #374151;
+}
+
+.cpi {
+  flex: 1;
+  color: #6b7280;
+}
+
+.year {
+  flex: 1;
+  text-align: right;
+  color: #6b7280;
+}
