@@ -118,3 +118,34 @@ footer {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pub-item {
+  background: #f9fafb;
+  padding: 15px;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+}
+
+.pub-item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pub-item a {
+  text-decoration: none;
+  color: #1d4ed8;
+}
+
+.pub-item a:hover {
+  text-decoration: underline;
+}
+
+.journal {
+  color: #6b7280;
+}
